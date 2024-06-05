@@ -1,0 +1,150 @@
+:root {
+    --primary-yellow: #FED811;
+    --secondary-yellow: #FFF6C3;
+    --primary-green: #06837F;
+    --secondary-green: #0a7c78;
+    --black: #000000;
+    --white: #ffffff;
+    --fs-2: 2rem;
+    --fs-1: 1rem;
+    --fs-1-25: 1.25rem;
+    --fs-1-375: 1.375rem;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;   
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+.menu,
+.view-order, 
+#login-screen {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-yellow);
+    position: relative;
+}
+button{
+    border: none;
+    outline: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+.category{
+    padding: 0 -8px 0;
+}
+
+.h-10 {
+    height: 10%;
+}
+.h-4rem{
+    height: 4.25rem;
+}
+
+.h-15 {
+    height: 15%;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.w-30 {
+    width: 30%
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.bg-custom-primary {
+    background-color: var(--primary-yellow);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-yellow) !important;
+}
+.bg-primary-green{
+    background-color: var(--primary-green);
+}
+.custom-shadow {
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.3);
+}
+.inner-shadow{
+    box-shadow:  inset 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.border-linear-gad{
+    background: linear-gradient(100deg, var(--primary-green), rgba(0, 0, 0, 0.5));
+}
+.custom-button {
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: 600;
+    border-radius: 1.25rem;
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--secondary-green);
+    text-decoration: none;
+
+}
+
+.custom-button:hover {
+    background-color: var(--primary-green);
+    opacity: 0.9;
+    color: white
+}
+
+.product-section {
+    height: 75vh;
+}
+.index-footer{
+    height: 10vh;
+    
+}
+.custom-image {
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.product-quantity>input[type=button] {
+    background-color: var(--primary-green);
+    color: var(--white)
+}
+
+.perfect-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-collapse {
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--primary-yellow);
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .category::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-section::-webkit-scrollbar {
+        display: none;
+    }
+}
